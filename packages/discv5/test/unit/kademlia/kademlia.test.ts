@@ -3,8 +3,7 @@ import { KademliaRoutingTable } from "../../../src/kademlia/kademlia.js";
 import { expect } from "chai";
 import { ENR, createNodeId, SignableENR } from "@chainsafe/enr";
 import { EntryStatus, log2Distance } from "../../../src/kademlia/index.js";
-import { randomBytes } from "@libp2p/crypto";
-import { toBuffer } from "../../../src/util/index.js";
+import { randomBytes } from "@noble/hashes/utils";
 import { generateKeypair } from "../../../src/index.js";
 
 describe("Kademlia routing table", () => {
@@ -124,5 +123,5 @@ function randomENR(): ENR {
 }
 
 function randomNodeId(): string {
-  return createNodeId(toBuffer(randomBytes(32)));
+  return createNodeId(randomBytes(32));
 }

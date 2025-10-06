@@ -1,5 +1,7 @@
 colors: true
 exit: true
-extension: ["ts"]
+extension:
+  - ts
 node-option:
-  - loader=ts-node/esm
+  - import=tsx/esm
+timeout: 5000
