@@ -1,4 +1,4 @@
-import { NodeId, ENR } from "@neth/enr";
+import { NodeId, ENR } from "@NethermindEth/enr";
 
 import { IKeys } from "./types.js";
 import {

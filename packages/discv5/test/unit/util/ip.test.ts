@@ -1,6 +1,6 @@
 import { multiaddr } from "@multiformats/multiaddr";
 import { expect } from "chai";
-import { SignableENR } from "@neth/enr";
+import { SignableENR } from "@NethermindEth/enr";
 import { generateKeypair } from "../../../src/index.js";
 import {
   getSocketAddressOnENR,

@@ -3,7 +3,7 @@ import { expect } from "chai";
 import { multiaddr } from "@multiformats/multiaddr";
 import { createSecp256k1PeerId, createFromPrivKey } from "@libp2p/peer-id-factory";
 import { unmarshalPrivateKey } from "@libp2p/crypto/keys";
-import { ENR, SignableENR } from "@neth/enr";
+import { ENR, SignableENR } from "@NethermindEth/enr";
 import { Discv5 } from "../../src/index.js";
 
 let port = 9000;

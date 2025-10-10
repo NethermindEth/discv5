@@ -1,6 +1,6 @@
 import { EventEmitter } from "events";
 import StrictEventEmitter from "strict-event-emitter-types";
-import { ENR, NodeId } from "@neth/enr";
+import { ENR, NodeId } from "@NethermindEth/enr";
 
 export interface IBucketEvents {
   /**

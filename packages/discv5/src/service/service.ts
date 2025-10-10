@@ -11,7 +11,7 @@ import {
   MAX_RECORD_SIZE,
   createNodeId,
   SignableENR,
-} from "@neth/enr";
+} from "@NethermindEth/enr";
 
 import { BindAddrs, IPMode, ITransportService, UDPTransportService } from "../transport/index.js";
 import { MAX_PACKET_SIZE } from "../packet/index.js";

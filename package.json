@@ -12,7 +12,7 @@
     "build": "lerna run build",
     "lint": "lerna run lint",
     "prepublishOnly": "yarn build",
-    "publish": "lerna publish from-package --yes --no-verify-access",
+    "publish": "lerna publish from-package --yes",
     "test": "lerna run test",
     "test:unit": "lerna run test:unit",
     "test:e2e": "lerna run test:e2e"

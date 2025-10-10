@@ -2,7 +2,7 @@ import { EventEmitter } from "events";
 import StrictEventEmitter from "strict-event-emitter-types";
 import { CodeError } from "@libp2p/interface";
 import { Multiaddr } from "@multiformats/multiaddr";
-import { ENR, SequenceNumber, SignableENR } from "@neth/enr";
+import { ENR, SequenceNumber, SignableENR } from "@NethermindEth/enr";
 
 import {
   INodesMessage,

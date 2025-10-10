@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 import { expect } from "chai";
 import { Multiaddr, multiaddr } from "@multiformats/multiaddr";
-import { SignableENR } from "@neth/enr";
+import { SignableENR } from "@NethermindEth/enr";
 
 import { createKeypair } from "../../../src/keypair/index.js";
 import { createWhoAreYouPacket, IPacket, PacketType } from "../../../src/packet/index.js";

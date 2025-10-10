@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 import { expect } from "chai";
 import { randomBytes } from "@noble/hashes/utils";
-import { getV4Crypto, SignableENR } from "@neth/enr";
+import { getV4Crypto, SignableENR } from "@NethermindEth/enr";
 
 import {
   deriveKey,

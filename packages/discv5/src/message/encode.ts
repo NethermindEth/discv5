@@ -15,7 +15,7 @@ import {
   ITalkReqMessage,
   ITalkRespMessage,
 } from "./types.js";
-import { bigintToBytes } from "@neth/enr";
+import { bigintToBytes } from "@NethermindEth/enr";
 
 export function encode(message: Message): Uint8Array {
   switch (message.type) {

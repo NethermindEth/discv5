@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 import { expect } from "chai";
 import { multiaddr } from "@multiformats/multiaddr";
-import { createPeerIdFromPrivateKey, SignableENR } from "@neth/enr";
+import { createPeerIdFromPrivateKey, SignableENR } from "@NethermindEth/enr";
 
 import { Discv5 } from "../../../src/service/service.js";
 import { generateKeypair } from "../../../src/keypair/index.js";

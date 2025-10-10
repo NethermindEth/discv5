@@ -1,4 +1,4 @@
-import { NodeId } from "@neth/enr";
+import { NodeId } from "@NethermindEth/enr";
 
 // DISCV5 message packet types
 

@@ -1,5 +1,5 @@
 import { multiaddr, Multiaddr } from "@multiformats/multiaddr";
-import { BaseENR, SignableENR } from "@neth/enr";
+import { BaseENR, SignableENR } from "@NethermindEth/enr";
 import { IPMode } from "../transport/types.js";
 
 export type IP = { type: 4 | 6; octets: Uint8Array };

@@ -5,6 +5,46 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
+"@NethermindEth/discv5@workspace:packages/discv5":
+  version: 0.0.0-use.local
+  resolution: "@NethermindEth/discv5@workspace:packages/discv5"
+  dependencies:
+    "@NethermindEth/enr": "workspace:*"
+    "@ethereumjs/rlp": "npm:^5.0.2"
+    "@libp2p/crypto": "npm:^4.0.1"
+    "@libp2p/interface": "npm:^1.1.1"
+    "@libp2p/peer-id-factory": "npm:^4.0.3"
+    "@multiformats/multiaddr": "npm:^12.1.10"
+    "@noble/hashes": "npm:^1.7.0"
+    "@noble/secp256k1": "npm:^2.2.2"
+    "@types/mocha": "npm:^10"
+    debug: "npm:^4.3.1"
+    lru-cache: "npm:^10.1.0"
+    mocha: "npm:^10"
+    strict-event-emitter-types: "npm:^2.0.0"
+    tsx: "npm:^4"
+  languageName: unknown
+  linkType: soft
+
+"@NethermindEth/enr@workspace:*, @NethermindEth/enr@workspace:packages/enr":
+  version: 0.0.0-use.local
+  resolution: "@NethermindEth/enr@workspace:packages/enr"
+  dependencies:
+    "@ethereumjs/rlp": "npm:^5.0.2"
+    "@libp2p/crypto": "npm:^4.0.1"
+    "@libp2p/interface": "npm:^1.1.1"
+    "@libp2p/peer-id": "npm:^4.0.4"
+    "@libp2p/peer-id-factory": "npm:^4.0.3"
+    "@multiformats/multiaddr": "npm:^12.1.10"
+    "@scure/base": "npm:^1.2.1"
+    "@types/bn.js": "npm:^4.11.5"
+    "@types/mocha": "npm:^10"
+    ethereum-cryptography: "npm:^2.2.0"
+    mocha: "npm:^10"
+    tsx: "npm:^4"
+  languageName: unknown
+  linkType: soft
+
 "@aashutoshrathi/word-wrap@npm:^1.2.3":
   version: 1.2.6
   resolution: "@aashutoshrathi/word-wrap@npm:1.2.6"
@@ -973,46 +1013,6 @@ __metadata:
   checksum: 10c0/276a016e335a732ebaa104c684d2c4cdf0325e963ebdc6591e68928e0e9d2e268f9ab63e02830f78cdbb0b505464014dac0a415462d726f34672ebe0c355d09f
   languageName: node
   linkType: hard
-
-"@neth/discv5@workspace:packages/discv5":
-  version: 0.0.0-use.local
-  resolution: "@neth/discv5@workspace:packages/discv5"
-  dependencies:
-    "@ethereumjs/rlp": "npm:^5.0.2"
-    "@libp2p/crypto": "npm:^4.0.1"
-    "@libp2p/interface": "npm:^1.1.1"
-    "@libp2p/peer-id-factory": "npm:^4.0.3"
-    "@multiformats/multiaddr": "npm:^12.1.10"
-    "@neth/enr": "workspace:*"
-    "@noble/hashes": "npm:^1.7.0"
-    "@noble/secp256k1": "npm:^2.2.2"
-    "@types/mocha": "npm:^10"
-    debug: "npm:^4.3.1"
-    lru-cache: "npm:^10.1.0"
-    mocha: "npm:^10"
-    strict-event-emitter-types: "npm:^2.0.0"
-    tsx: "npm:^4"
-  languageName: unknown
-  linkType: soft
-
-"@neth/enr@workspace:*, @neth/enr@workspace:packages/enr":
-  version: 0.0.0-use.local
-  resolution: "@neth/enr@workspace:packages/enr"
-  dependencies:
-    "@ethereumjs/rlp": "npm:^5.0.2"
-    "@libp2p/crypto": "npm:^4.0.1"
-    "@libp2p/interface": "npm:^1.1.1"
-    "@libp2p/peer-id": "npm:^4.0.4"
-    "@libp2p/peer-id-factory": "npm:^4.0.3"
-    "@multiformats/multiaddr": "npm:^12.1.10"
-    "@scure/base": "npm:^1.2.1"
-    "@types/bn.js": "npm:^4.11.5"
-    "@types/mocha": "npm:^10"
-    ethereum-cryptography: "npm:^2.2.0"
-    mocha: "npm:^10"
-    tsx: "npm:^4"
-  languageName: unknown
-  linkType: soft
 
 "@noble/curves@npm:1.4.2, @noble/curves@npm:~1.4.0":
   version: 1.4.2

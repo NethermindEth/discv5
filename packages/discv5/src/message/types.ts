@@ -1,4 +1,4 @@
-import { SequenceNumber, ENR } from "@neth/enr";
+import { SequenceNumber, ENR } from "@NethermindEth/enr";
 import { SocketAddress } from "../util/ip.js";
 
 export type RequestId = bigint;

@@ -1,5 +1,5 @@
 import { expect } from "chai";
-import { createNodeId } from "@neth/enr";
+import { createNodeId } from "@NethermindEth/enr";
 import { AddrVotes } from "../../../src/service/addrVotes.js";
 import { SocketAddress } from "../../../src/util/ip.js";
 

@@ -1,5 +1,5 @@
 import { randomBytes } from "@noble/hashes/utils";
-import { NodeId, SequenceNumber } from "@neth/enr";
+import { NodeId, SequenceNumber } from "@NethermindEth/enr";
 import { ID_NONCE_SIZE, MASKING_IV_SIZE, NONCE_SIZE } from "./constants.js";
 import { encodeMessageAuthdata, encodeWhoAreYouAuthdata } from "./encode.js";
 import { IHeader, IPacket, PacketType } from "./types.js";
