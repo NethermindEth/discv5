@@ -1,4 +1,4 @@
-import { NodeId } from "@chainsafe/enr";
+import { NodeId } from "@neth/enr";
 
 // DISCV5 message packet types
 

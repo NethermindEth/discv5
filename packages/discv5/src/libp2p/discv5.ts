@@ -8,7 +8,7 @@ import {
   TypedEventEmitter,
 } from "@libp2p/interface";
 import { Multiaddr, multiaddr } from "@multiformats/multiaddr";
-import { ENR } from "@chainsafe/enr";
+import { ENR } from "@neth/enr";
 
 import { Discv5, ENRInput, SignableENRInput } from "../service/index.js";
 import { IDiscv5Config } from "../config/index.js";

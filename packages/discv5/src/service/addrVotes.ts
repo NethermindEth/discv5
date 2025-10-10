@@ -1,4 +1,4 @@
-import { NodeId } from "@chainsafe/enr";
+import { NodeId } from "@neth/enr";
 import { SocketAddress } from "../util/ip.js";
 
 /** Serialized representation of the IP:port vote from the Pong message */

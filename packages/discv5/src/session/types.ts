@@ -1,5 +1,5 @@
 import { Multiaddr } from "@multiformats/multiaddr";
-import { NodeId, ENR } from "@chainsafe/enr";
+import { NodeId, ENR } from "@neth/enr";
 
 import { IPacket } from "../packet/index.js";
 import { RequestMessage, ResponseMessage } from "../message/index.js";

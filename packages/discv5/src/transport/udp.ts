@@ -1,7 +1,7 @@
 import * as dgram from "node:dgram";
 import { EventEmitter } from "events";
 import { Multiaddr, multiaddr, MultiaddrObject } from "@multiformats/multiaddr";
-import { ENR } from "@chainsafe/enr";
+import { ENR } from "@neth/enr";
 
 import { decodePacket, encodePacket, IPacket, MAX_PACKET_SIZE } from "../packet/index.js";
 import { BindAddrs, IPMode, IRemoteInfo, ITransportService, TransportEventEmitter } from "./types.js";

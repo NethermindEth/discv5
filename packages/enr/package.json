@@ -1,6 +1,6 @@
 {
-  "name": "@chainsafe/enr",
-  "version": "3.0.0",
+  "name": "@neth/enr",
+  "version": "3.0.0-backport-306",
   "description": "Ethereum name record",
   "type": "module",
   "files": [
@@ -35,7 +35,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ChainSafe/discv5.git"
+    "url": "git+https://github.com/NethermindEth/discv5"
   },
   "keywords": [
     "discovery",

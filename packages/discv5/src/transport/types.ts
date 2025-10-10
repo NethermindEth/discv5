@@ -1,7 +1,7 @@
 import { EventEmitter } from "events";
 import StrictEventEmitter from "strict-event-emitter-types";
 import { Multiaddr } from "@multiformats/multiaddr";
-import { BaseENR } from "@chainsafe/enr";
+import { BaseENR } from "@neth/enr";
 
 import { IPacket } from "../packet/index.js";
 import { SocketAddress } from "../util/ip.js";

@@ -1,5 +1,5 @@
 import { EventEmitter } from "events";
-import { ENR, NodeId } from "@chainsafe/enr";
+import { ENR, NodeId } from "@neth/enr";
 
 import { MAX_NODES_PER_BUCKET } from "./constants.js";
 import { BucketEventEmitter, EntryStatus, IEntry, IEntryFull, InsertResult, UpdateResult } from "./types.js";

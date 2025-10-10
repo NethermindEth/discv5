@@ -1,4 +1,4 @@
-import { bytesToBigint, NodeId } from "@chainsafe/enr";
+import { bytesToBigint, NodeId } from "@neth/enr";
 
 import { NUM_BUCKETS } from "./constants.js";
 import { hexToBytes } from "ethereum-cryptography/utils.js";

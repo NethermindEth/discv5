@@ -1,6 +1,6 @@
 {
-  "name": "@chainsafe/discv5",
-  "version": "9.0.0",
+  "name": "@neth/discv5",
+  "version": "9.0.0-backport-306",
   "description": "Discovery V5",
   "type": "module",
   "files": [
@@ -50,7 +50,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ChainSafe/discv5.git"
+    "url": "git+https://github.com/NethermindEth/discv5"
   },
   "keywords": [
     "discovery",
@@ -71,11 +71,11 @@
     "tsx": "^4"
   },
   "dependencies": {
-    "@chainsafe/enr": "workspace:*",
     "@ethereumjs/rlp": "^5.0.2",
     "@libp2p/crypto": "^4.0.1",
     "@libp2p/interface": "^1.1.1",
     "@multiformats/multiaddr": "^12.1.10",
+    "@neth/enr": "workspace:*",
     "@noble/hashes": "^1.7.0",
     "@noble/secp256k1": "^2.2.2",
     "debug": "^4.3.1",
