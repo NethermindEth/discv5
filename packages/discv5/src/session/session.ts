@@ -78,8 +78,8 @@ export class Session {
     localId: NodeId,
     remoteId: NodeId,
     challenge: IChallenge,
-    idSignature: Buffer,
-    ephPubkey: Buffer,
+    idSignature: Uint8Array,
+    ephPubkey: Uint8Array,
     enrRecord?: Uint8Array
   ): [Session, ENR] {
     let enr: ENR;
@@ -132,8 +132,8 @@ export class Session {
     localKey: IKeypair,
     localNodeId: NodeId,
     updatedEnr: Uint8Array | null,
-    challengeData: Buffer,
-    message: Buffer
+    challengeData: Uint8Array,
+    message: Uint8Array
   ): [IPacket, Session] {
     // generate session keys
     const [encryptionKey, decryptionKey, ephPubkey] = generateSessionKeys(
@@ -187,7 +187,7 @@ export class Session {
    * Encrypt packets with the current session key if we are awaiting a response from an
    * IAuthMessagePacket.
    */
-  encryptMessage(srcId: NodeId, destId: NodeId, message: Buffer): IPacket {
+  encryptMessage(srcId: NodeId, destId: NodeId, message: Uint8Array): IPacket {
     const authdata = encodeMessageAuthdata({ srcId });
     const header = createHeader(PacketType.Message, authdata);
     const maskingIv = randomBytes(MASKING_IV_SIZE);
@@ -206,7 +206,7 @@ export class Session {
    * upon failure, the new keys are attempted. If the new keys succeed,
    * the session keys are updated along with the Session state.
    */
-  decryptMessage(nonce: Buffer, message: Buffer, aad: Buffer): Buffer {
+  decryptMessage(nonce: Uint8Array, message: Uint8Array, aad: Uint8Array): Uint8Array {
     // try with the new keys
     if (this.awaitingKeys) {
       const newKeys = this.awaitingKeys;

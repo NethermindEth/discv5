@@ -1,15 +1,15 @@
-import { randomBytes } from "bcrypto/lib/random.js";
+import { randomBytes } from "@noble/hashes/utils";
 import { NodeId, SequenceNumber } from "@chainsafe/enr";
 import { ID_NONCE_SIZE, MASKING_IV_SIZE, NONCE_SIZE } from "./constants.js";
 import { encodeMessageAuthdata, encodeWhoAreYouAuthdata } from "./encode.js";
 import { IHeader, IPacket, PacketType } from "./types.js";
 
-export function createHeader(flag: PacketType, authdata: Buffer, nonce = randomBytes(NONCE_SIZE)): IHeader {
+export function createHeader(flag: PacketType, authdata: Uint8Array, nonce = randomBytes(NONCE_SIZE)): IHeader {
   return {
     protocolId: "discv5",
     version: 1,
     flag,
-    nonce,
+    nonce: nonce,
     authdataSize: authdata.length,
     authdata,
   };
@@ -27,7 +27,7 @@ export function createRandomPacket(srcId: NodeId): IPacket {
   };
 }
 
-export function createWhoAreYouPacket(nonce: Buffer, enrSeq: SequenceNumber): IPacket {
+export function createWhoAreYouPacket(nonce: Uint8Array, enrSeq: SequenceNumber): IPacket {
   const idNonce = randomBytes(ID_NONCE_SIZE);
   const authdata = encodeWhoAreYouAuthdata({ idNonce, enrSeq });
   const header = createHeader(PacketType.WhoAreYou, authdata, nonce);
