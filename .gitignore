@@ -75,3 +75,4 @@ lib
 
 # others
 package-lock.json
+/.npmrc
