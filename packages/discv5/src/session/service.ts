@@ -2,7 +2,7 @@ import { EventEmitter } from "events";
 import StrictEventEmitter from "strict-event-emitter-types";
 import debug from "debug";
 import { Multiaddr } from "@multiformats/multiaddr";
-import { ENR, SignableENR } from "@NethermindEth/enr";
+import { ENR, SignableENR } from "@nethermindeth/enr";
 import { bytesToHex, equalsBytes } from "ethereum-cryptography/utils.js";
 import { IPMode, ITransportService } from "../transport/index.js";
 import {

@@ -4,7 +4,7 @@ import { multiaddr } from "@multiformats/multiaddr";
 import { PeerId } from "@libp2p/interface";
 import { createFromPrivKey } from "@libp2p/peer-id-factory";
 import { unmarshalPrivateKey } from "@libp2p/crypto/keys";
-import { SignableENR } from "@NethermindEth/enr";
+import { SignableENR } from "@nethermindeth/enr";
 import { Discv5 } from "../../src/index.js";
 
 let nodeIdx = 0;

@@ -1,5 +1,5 @@
 {
-  "name": "@NethermindEth/enr",
+  "name": "@nethermindeth/enr",
   "version": "3.0.0-backport-306",
   "description": "Ethereum name record",
   "type": "module",

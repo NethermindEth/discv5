@@ -1,7 +1,7 @@
 import { expect } from "chai";
 import { createFromPrivKey, createFromPubKey } from "@libp2p/peer-id-factory";
 import { supportedKeys } from "@libp2p/crypto/keys";
-import { createPeerIdFromPrivateKey, createPeerIdFromPublicKey } from "@NethermindEth/enr";
+import { createPeerIdFromPrivateKey, createPeerIdFromPublicKey } from "@nethermindeth/enr";
 import { generateKeypair } from "../../../src/keypair/index.js";
 
 describe("createPeerIdFromPrivateKey", function () {

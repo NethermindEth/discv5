@@ -1,5 +1,5 @@
 import { randomBytes, toBytes } from "@noble/hashes/utils";
-import { bytesToBigint, SequenceNumber, ENR } from "@NethermindEth/enr";
+import { bytesToBigint, SequenceNumber, ENR } from "@nethermindeth/enr";
 
 import {
   RequestId,

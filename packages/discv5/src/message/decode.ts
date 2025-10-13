@@ -1,5 +1,5 @@
 import * as RLP from "@ethereumjs/rlp";
-import { bytesToBigint, ENR } from "@NethermindEth/enr";
+import { bytesToBigint, ENR } from "@nethermindeth/enr";
 import {
   IPingMessage,
   IPongMessage,

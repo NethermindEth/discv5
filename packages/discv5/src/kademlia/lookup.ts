@@ -1,5 +1,5 @@
 import { EventEmitter } from "events";
-import { ENR, NodeId } from "@NethermindEth/enr";
+import { ENR, NodeId } from "@nethermindeth/enr";
 
 import { createFindNodeMessage, RequestMessage } from "../message/index.js";
 import { ILookupPeer, ILookupConfig, LookupState, LookupPeerState, LookupEventEmitter } from "./types.js";

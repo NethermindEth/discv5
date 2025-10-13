@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 import { KademliaRoutingTable } from "../../../src/kademlia/kademlia.js";
 import { expect } from "chai";
-import { ENR, createNodeId, SignableENR } from "@NethermindEth/enr";
+import { ENR, createNodeId, SignableENR } from "@nethermindeth/enr";
 import { EntryStatus, log2Distance } from "../../../src/kademlia/index.js";
 import { randomBytes } from "@noble/hashes/utils";
 import { generateKeypair } from "../../../src/index.js";

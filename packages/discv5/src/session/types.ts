@@ -1,5 +1,5 @@
 import { Multiaddr } from "@multiformats/multiaddr";
-import { NodeId, ENR } from "@NethermindEth/enr";
+import { NodeId, ENR } from "@nethermindeth/enr";
 
 import { IPacket } from "../packet/index.js";
 import { RequestMessage, ResponseMessage } from "../message/index.js";

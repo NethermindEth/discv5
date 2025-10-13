@@ -1,5 +1,5 @@
 {
-  "name": "@NethermindEth/discv5",
+  "name": "@nethermindeth/discv5",
   "version": "9.0.0-backport-306",
   "description": "Discovery V5",
   "type": "module",
@@ -74,11 +74,11 @@
     "tsx": "^4"
   },
   "dependencies": {
-    "@NethermindEth/enr": "workspace:*",
     "@ethereumjs/rlp": "^5.0.2",
     "@libp2p/crypto": "^4.0.1",
     "@libp2p/interface": "^1.1.1",
     "@multiformats/multiaddr": "^12.1.10",
+    "@nethermindeth/enr": "workspace:*",
     "@noble/hashes": "^1.7.0",
     "@noble/secp256k1": "^2.2.2",
     "debug": "^4.3.1",

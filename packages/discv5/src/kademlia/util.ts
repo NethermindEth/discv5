@@ -1,4 +1,4 @@
-import { bytesToBigint, NodeId } from "@NethermindEth/enr";
+import { bytesToBigint, NodeId } from "@nethermindeth/enr";
 
 import { NUM_BUCKETS } from "./constants.js";
 import { hexToBytes } from "ethereum-cryptography/utils.js";

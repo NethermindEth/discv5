@@ -27,7 +27,7 @@ import {
 } from "./constants.js";
 import { IHandshakeAuthdata, IHeader, IMessageAuthdata, IPacket, IWhoAreYouAuthdata, PacketType } from "./types.js";
 import { bytesToHex, concatBytes, hexToBytes, utf8ToBytes, bytesToUtf8 } from "ethereum-cryptography/utils.js";
-import { bigintToBytes, bytesToBigint } from "@NethermindEth/enr";
+import { bigintToBytes, bytesToBigint } from "@nethermindeth/enr";
 
 export function encodePacket(destId: string, packet: IPacket): Uint8Array {
   return concatBytes(packet.maskingIv, encodeHeader(destId, packet.maskingIv, packet.header), packet.message);
