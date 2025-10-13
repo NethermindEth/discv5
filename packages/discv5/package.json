@@ -66,20 +66,20 @@
   "homepage": "https://github.com/ChainSafe/discv5#readme",
   "devDependencies": {
     "@libp2p/peer-id-factory": "^4.0.3",
+    "@types/mocha": "^10",
     "mocha": "^10",
-    "tsx": "^4",
-    "@types/mocha": "^10"
+    "tsx": "^4"
   },
   "dependencies": {
-    "@chainsafe/enr": "^3.0.0",
+    "@chainsafe/enr": "file:../../packages/enr",
     "@ethereumjs/rlp": "^5.0.2",
     "@libp2p/crypto": "^4.0.1",
     "@libp2p/interface": "^1.1.1",
     "@multiformats/multiaddr": "^12.1.10",
+    "@noble/hashes": "^1.7.0",
+    "@noble/secp256k1": "^2.2.2",
     "debug": "^4.3.1",
     "lru-cache": "^10.1.0",
-    "strict-event-emitter-types": "^2.0.0",
-	  "@noble/hashes": "^1.7.0",
-    "@noble/secp256k1": "^2.2.2"
+    "strict-event-emitter-types": "^2.0.0"
   }
 }
