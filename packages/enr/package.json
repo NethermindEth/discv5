@@ -37,8 +37,8 @@
     "type": "git",
     "url": "git+https://github.com/NethermindEth/discv5"
   },
-   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+  "publishConfig": {
+    "access": "public"
   },
   "keywords": [
     "discovery",
