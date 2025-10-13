@@ -1,5 +1,5 @@
 import Crypto from "node:crypto";
-import { NodeId } from "@chainsafe/enr";
+import { NodeId } from "@nethermindeth/enr";
 
 import { generateKeypair, IKeypair, createKeypair } from "../keypair/index.js";
 import { getDiscv5Crypto } from "../util/crypto.js";

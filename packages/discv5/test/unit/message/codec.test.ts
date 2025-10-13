@@ -1,5 +1,5 @@
 import { expect } from "chai";
-import { ENR } from "@chainsafe/enr";
+import { ENR } from "@nethermindeth/enr";
 import { Message, MessageType, decode, encode } from "../../../src/message/index.js";
 import { hexToBytes } from "ethereum-cryptography/utils.js";
 

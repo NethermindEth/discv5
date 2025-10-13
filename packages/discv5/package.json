@@ -1,6 +1,6 @@
 {
-  "name": "@chainsafe/discv5",
-  "version": "9.0.0",
+  "name": "@nethermindeth/discv5",
+  "version": "9.0.0-backport-306-v2",
   "description": "Discovery V5",
   "type": "module",
   "files": [
@@ -71,7 +71,7 @@
     "tsx": "^4"
   },
   "dependencies": {
-    "@chainsafe/enr": "file:../../packages/enr",
+    "@nethermindeth/enr": "file:../../packages/enr",
     "@ethereumjs/rlp": "^5.0.2",
     "@libp2p/crypto": "^4.0.1",
     "@libp2p/interface": "^1.1.1",

@@ -282,17 +282,6 @@
     "@babel/helper-validator-identifier" "^7.22.20"
     to-fast-properties "^2.0.0"
 
-"@chainsafe/enr@file:packages/enr":
-  version "3.0.0"
-  dependencies:
-    "@ethereumjs/rlp" "^5.0.2"
-    "@libp2p/crypto" "^4.0.1"
-    "@libp2p/interface" "^1.1.1"
-    "@libp2p/peer-id" "^4.0.4"
-    "@multiformats/multiaddr" "^12.1.10"
-    "@scure/base" "^1.2.1"
-    ethereum-cryptography "^2.2.0"
-
 "@chainsafe/eslint-plugin-node@^11.2.3":
   version "11.2.3"
   resolved "https://registry.yarnpkg.com/@chainsafe/eslint-plugin-node/-/eslint-plugin-node-11.2.3.tgz#ff2c3fbf11db204aeaa72dcee60233140ad1c34a"
@@ -754,6 +743,17 @@
     multiformats "^13.0.0"
     uint8-varint "^2.0.1"
     uint8arrays "^5.0.0"
+
+"@nethermindeth/enr@file:packages/enr":
+  version "3.0.0-backport-306-v2"
+  dependencies:
+    "@ethereumjs/rlp" "^5.0.2"
+    "@libp2p/crypto" "^4.0.1"
+    "@libp2p/interface" "^1.1.1"
+    "@libp2p/peer-id" "^4.0.4"
+    "@multiformats/multiaddr" "^12.1.10"
+    "@scure/base" "^1.2.1"
+    ethereum-cryptography "^2.2.0"
 
 "@noble/curves@1.4.2", "@noble/curves@~1.4.0":
   version "1.4.2"

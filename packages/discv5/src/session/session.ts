@@ -1,4 +1,4 @@
-import { NodeId, ENR } from "@chainsafe/enr";
+import { NodeId, ENR } from "@nethermindeth/enr";
 
 import { IKeys } from "./types.js";
 import {

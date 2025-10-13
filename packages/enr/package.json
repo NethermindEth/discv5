@@ -1,6 +1,6 @@
 {
-  "name": "@chainsafe/enr",
-  "version": "3.0.0",
+  "name": "@nethermindeth/enr",
+  "version": "3.0.0-backport-306-v2",
   "description": "Ethereum name record",
   "type": "module",
   "files": [
