@@ -1,6 +1,6 @@
 {
   "name": "@nethermindeth/discv5",
-  "version": "9.0.0-backport-306-v2",
+  "version": "9.0.0-backport-306-v3",
   "description": "Discovery V5",
   "type": "module",
   "files": [
