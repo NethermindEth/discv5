@@ -1,5 +1,5 @@
 {
-  "name": "@chainsafe/enr",
+  "name": "@nethermindeth/enr",
   "version": "3.0.0",
   "description": "Ethereum name record",
   "type": "module",

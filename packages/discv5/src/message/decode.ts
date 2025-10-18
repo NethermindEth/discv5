@@ -1,5 +1,5 @@
 import * as RLP from "rlp";
-import { ENR } from "@chainsafe/enr";
+import { ENR } from "@nethermindeth/enr";
 import {
   IPingMessage,
   IPongMessage,

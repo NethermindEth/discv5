@@ -1,4 +1,4 @@
-import { NodeId } from "@chainsafe/enr";
+import { NodeId } from "@nethermindeth/enr";
 
 import { fromHex, bufferToBigInt } from "../util/index.js";
 import { NUM_BUCKETS } from "./constants.js";

@@ -1,6 +1,6 @@
 import { Multiaddr, isMultiaddr } from "@multiformats/multiaddr";
 import { peerIdFromString } from "@libp2p/peer-id";
-import { createPublicKeyFromPeerId, ENR, NodeId, getV4Crypto } from "@chainsafe/enr";
+import { createPublicKeyFromPeerId, ENR, NodeId, getV4Crypto } from "@nethermindeth/enr";
 import { createKeypair, IKeypair } from "../keypair/index.js";
 import { IPMode } from "../transport/types.js";
 import { getSocketAddressMultiaddrOnENR } from "../util/ip.js";

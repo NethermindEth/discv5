@@ -1,5 +1,5 @@
 import { EventEmitter } from "events";
-import { NodeId, ENR } from "@chainsafe/enr";
+import { NodeId, ENR } from "@nethermindeth/enr";
 
 import { Bucket } from "./bucket.js";
 import { EntryStatus, IEntryFull, BucketEventEmitter, IEntry, InsertResult } from "./types.js";

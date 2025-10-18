@@ -1,7 +1,7 @@
 import hkdf from "bcrypto/lib/hkdf.js";
 import sha256 from "bcrypto/lib/sha256.js";
 import cipher from "bcrypto/lib/cipher.js";
-import { NodeId } from "@chainsafe/enr";
+import { NodeId } from "@nethermindeth/enr";
 
 import { generateKeypair, IKeypair, createKeypair } from "../keypair/index.js";
 import { fromHex } from "../util/index.js";

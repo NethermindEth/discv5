@@ -2,7 +2,7 @@
 import { expect } from "chai";
 import secp256k1 from "bcrypto/lib/secp256k1.js";
 import { randomBytes } from "bcrypto/lib/random.js";
-import { getV4Crypto, SignableENR } from "@chainsafe/enr";
+import { getV4Crypto, SignableENR } from "@nethermindeth/enr";
 
 import {
   deriveKey,

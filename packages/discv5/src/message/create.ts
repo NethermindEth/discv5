@@ -1,5 +1,5 @@
 import { randomBytes } from "bcrypto/lib/random.js";
-import { SequenceNumber, ENR } from "@chainsafe/enr";
+import { SequenceNumber, ENR } from "@nethermindeth/enr";
 
 import {
   RequestId,
