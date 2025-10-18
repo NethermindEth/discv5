@@ -1,5 +1,4 @@
 import * as RLP from "rlp";
-import { toBigIntBE } from "bigint-buffer";
 import { ENR } from "@chainsafe/enr";
 import {
   IPingMessage,
@@ -16,6 +15,7 @@ import {
   ITalkRespMessage,
 } from "./types.js";
 import { ipFromBytes } from "../util/ip.js";
+import { bufferToBigInt } from "../util/index.js";
 
 const ERR_INVALID_MESSAGE = "invalid message";
 
@@ -54,8 +54,8 @@ function decodePing(data: Buffer): IPingMessage {
   }
   return {
     type: MessageType.PING,
-    id: toBigIntBE(rlpRaw[0]),
-    enrSeq: toBigIntBE(rlpRaw[1]),
+    id: bufferToBigInt(rlpRaw[0]),
+    enrSeq: bufferToBigInt(rlpRaw[1]),
   };
 }
 
@@ -79,8 +79,8 @@ function decodePong(data: Buffer): IPongMessage {
 
   return {
     type: MessageType.PONG,
-    id: toBigIntBE(rlpRaw[0]),
-    enrSeq: toBigIntBE(rlpRaw[1]),
+    id: bufferToBigInt(rlpRaw[0]),
+    enrSeq: bufferToBigInt(rlpRaw[1]),
     addr: { ip, port },
   };
 }
@@ -96,7 +96,7 @@ function decodeFindNode(data: Buffer): IFindNodeMessage {
   const distances = (rlpRaw[1] as unknown as Buffer[]).map((x) => (x.length ? x.readUIntBE(0, x.length) : 0));
   return {
     type: MessageType.FINDNODE,
-    id: toBigIntBE(rlpRaw[0]),
+    id: bufferToBigInt(rlpRaw[0]),
     distances,
   };
 }
@@ -108,7 +108,7 @@ function decodeNodes(data: Buffer): INodesMessage {
   }
   return {
     type: MessageType.NODES,
-    id: toBigIntBE(rlpRaw[0]),
+    id: bufferToBigInt(rlpRaw[0]),
     total: rlpRaw[1].length ? rlpRaw[1].readUIntBE(0, rlpRaw[1].length) : 0,
     enrs: rlpRaw[2].map((enrRaw) => ENR.decodeFromValues(enrRaw)),
   };
@@ -121,7 +121,7 @@ function decodeTalkReq(data: Buffer): ITalkReqMessage {
   }
   return {
     type: MessageType.TALKREQ,
-    id: toBigIntBE(rlpRaw[0]),
+    id: bufferToBigInt(rlpRaw[0]),
     protocol: rlpRaw[1],
     request: rlpRaw[2],
   };
@@ -134,7 +134,7 @@ function decodeTalkResp(data: Buffer): ITalkRespMessage {
   }
   return {
     type: MessageType.TALKRESP,
-    id: toBigIntBE(rlpRaw[0]),
+    id: bufferToBigInt(rlpRaw[0]),
     response: rlpRaw[1],
   };
 }
@@ -146,7 +146,7 @@ function decodeRegTopic(data: Buffer): IRegTopicMessage {
   }
   return {
     type: MessageType.REGTOPIC,
-    id: toBigIntBE(rlpRaw[0]),
+    id: bufferToBigInt(rlpRaw[0]),
     topic: rlpRaw[1],
     enr: ENR.decodeFromValues(rlpRaw[2] as unknown as Buffer[]),
     ticket: rlpRaw[3],
@@ -160,7 +160,7 @@ function decodeTicket(data: Buffer): ITicketMessage {
   }
   return {
     type: MessageType.TICKET,
-    id: toBigIntBE(rlpRaw[0]),
+    id: bufferToBigInt(rlpRaw[0]),
     ticket: rlpRaw[1],
     waitTime: rlpRaw[2].length ? rlpRaw[2].readUIntBE(0, rlpRaw[2].length) : 0,
   };
@@ -173,7 +173,7 @@ function decodeRegConfirmation(data: Buffer): IRegConfirmationMessage {
   }
   return {
     type: MessageType.REGCONFIRMATION,
-    id: toBigIntBE(rlpRaw[0]),
+    id: bufferToBigInt(rlpRaw[0]),
     topic: rlpRaw[1],
   };
 }
@@ -185,7 +185,7 @@ function decodeTopicQuery(data: Buffer): ITopicQueryMessage {
   }
   return {
     type: MessageType.TOPICQUERY,
-    id: toBigIntBE(rlpRaw[0]),
+    id: bufferToBigInt(rlpRaw[0]),
     topic: rlpRaw[1],
   };
 }

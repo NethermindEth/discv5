@@ -1,4 +1,3 @@
-import { toBigIntBE } from "bigint-buffer";
 import { fromString, toString } from "uint8arrays";
 import { NodeId } from "./types.js";
 
@@ -23,15 +22,16 @@ export function fromBase64url(str: string): Uint8Array {
 }
 
 export function toBigInt(buf: Uint8Array): bigint {
-  if (globalThis.Buffer != null) {
-    return toBigIntBE(globalThis.Buffer.from(buf));
-  }
-
   if (buf.length === 0) {
     return BigInt(0);
   }
 
   return BigInt(`0x${toString(buf, "hex")}`);
+}
+
+export function fromBigInt(value: bigint, length: number): Uint8Array {
+  const hex = value.toString(16).padStart(length * 2, "0");
+  return fromString(hex, "hex");
 }
 
 export function createNodeId(buf: Uint8Array): NodeId {

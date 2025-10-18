@@ -1,5 +1,4 @@
 import { randomBytes } from "bcrypto/lib/random.js";
-import { toBigIntBE } from "bigint-buffer";
 import { SequenceNumber, ENR } from "@chainsafe/enr";
 
 import {
@@ -11,9 +10,10 @@ import {
   ITalkReqMessage,
   ITalkRespMessage,
 } from "./types.js";
+import { bufferToBigInt } from "../util/index.js";
 
 export function createRequestId(): RequestId {
-  return toBigIntBE(randomBytes(8));
+  return bufferToBigInt(randomBytes(8));
 }
 
 export function createPingMessage(enrSeq: SequenceNumber): IPingMessage {

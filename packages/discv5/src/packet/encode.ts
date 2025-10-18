@@ -1,8 +1,7 @@
 import { CodeError } from "@libp2p/interface";
 import cipher from "bcrypto/lib/cipher.js";
-import { toBigIntBE, toBufferBE } from "bigint-buffer";
 
-import { bufferToNumber, fromHex, numberToBuffer, toHex } from "../util/index.js";
+import { bufferToNumber, fromHex, numberToBuffer, toHex, bigIntToBuffer, bufferToBigInt } from "../util/index.js";
 import {
   AUTHDATA_SIZE_SIZE,
   EPH_KEY_SIZE_SIZE,
@@ -127,7 +126,7 @@ export function decodeHeader(srcId: string, maskingIv: Buffer, data: Buffer): [I
 // authdata
 
 export function encodeWhoAreYouAuthdata(authdata: IWhoAreYouAuthdata): Buffer {
-  return Buffer.concat([authdata.idNonce, toBufferBE(authdata.enrSeq, 8)]);
+  return Buffer.concat([authdata.idNonce, bigIntToBuffer(authdata.enrSeq, 8)]);
 }
 
 export function encodeMessageAuthdata(authdata: IMessageAuthdata): Buffer {
@@ -151,7 +150,7 @@ export function decodeWhoAreYouAuthdata(data: Buffer): IWhoAreYouAuthdata {
   }
   return {
     idNonce: data.slice(0, ID_NONCE_SIZE),
-    enrSeq: toBigIntBE(data.slice(ID_NONCE_SIZE)),
+    enrSeq: bufferToBigInt(data.slice(ID_NONCE_SIZE)),
   };
 }
 

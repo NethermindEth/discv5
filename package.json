@@ -4,7 +4,9 @@
   "version": "0.0.0",
   "description": "Discovery V5 monorepo",
   "type": "module",
-  "workspaces": ["packages/*"],
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "check-types": "lerna run check-types",
     "build": "lerna run build",
@@ -25,7 +27,7 @@
     "@types/debug": "^4.1.5",
     "@types/eslint": "^6.1.3",
     "@types/mocha": "^8.0.3",
-    "@types/node": "^20.6.0",
+    "@types/node": "^22",
     "@typescript-eslint/eslint-plugin": "^5.27.1",
     "@typescript-eslint/parser": "^5.27.1",
     "chai": "^4.3.6",
@@ -37,6 +39,7 @@
     "nyc": "^14.1.1",
     "prettier": "^2.6.2",
     "ts-node": "^10.8.1",
-    "typescript": "^4.7.3"
-  }
+    "typescript": "~5.6"
+  },
+  "packageManager": "yarn@1.22.19"
 }

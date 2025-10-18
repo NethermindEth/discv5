@@ -12,3 +12,15 @@ export function numberToBuffer(value: number, length: number): Buffer {
 export function bufferToNumber(buffer: Buffer, length: number, offset = 0): number {
   return buffer.readUIntBE(offset, length);
 }
+
+export function bigIntToBuffer(value: bigint, length: number): Buffer {
+  const hex = value.toString(16).padStart(length * 2, "0");
+  return Buffer.from(hex, "hex");
+}
+
+export function bufferToBigInt(buffer: Buffer): bigint {
+  if (buffer.length === 0) {
+    return BigInt(0);
+  }
+  return BigInt(`0x${buffer.toString("hex")}`);
+}

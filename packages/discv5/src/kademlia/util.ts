@@ -1,14 +1,13 @@
-import { toBigIntBE } from "bigint-buffer";
 import { NodeId } from "@chainsafe/enr";
 
-import { fromHex } from "../util/index.js";
+import { fromHex, bufferToBigInt } from "../util/index.js";
 import { NUM_BUCKETS } from "./constants.js";
 
 /**
  * Computes the xor distance between two NodeIds
  */
 export function distance(a: NodeId, b: NodeId): bigint {
-  return toBigIntBE(fromHex(a)) ^ toBigIntBE(fromHex(b));
+  return bufferToBigInt(fromHex(a)) ^ bufferToBigInt(fromHex(b));
 }
 
 export function log2Distance(a: NodeId, b: NodeId): number {
